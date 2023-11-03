@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Login</title>
+        <script src="https://kit.fontawesome.com/e9b7021f50.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="data:image/png;base64,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">
+    </head>
+    <style>
+    @media (max-width: 767px){
+            .login-rblx2 h1 {
+                font-size: 24px;
+            }
+        }
+
+    </style>
+    <body>
+        <header>
+                    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: auto;
+            height: auto;
+        }
+        body header{
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            background:  #191b1d ;
+            display: grid;
+            height: 42.25px;
+            z-index: 15;
+            border-bottom: 0px solid #000;
+            overflow: hidden;
+        }
+        @media(max-width: 1000px){
+            body header{
+                height: 82.5px;
+            }
+            .content-login{
+                position: relative;
+                top: 75px
+            }
+            .task2-on{
+                display: none;
+            }
+            .task1{
+                margin-right: 75px;
+            }
+        }
+        .icon-rblx{
+            position: relative;
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjY3NiAwTDAgNDQuMTY2IDQzLjU3NyA1NmwxMS42NzYtNDQuMTY2TDExLjY3NiAwem0yMC40MDkgMzUuODI3bC0xMi4xNzctMy4zMDggMy4yNjQtMTIuMzQyIDEyLjE4MiAzLjMwOC0zLjI3IDEyLjM0MnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-size: auto auto ;
+            background-size: 30px 30px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateY(5px);
+        }
+        .icon-roblox{
+            width: 34px;
+            height: 40px;
+            margin-left: 12.5px;
+            cursor: pointer;
+        }
+        .menu1_span{
+            position: relative;
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* float: left; */
+        }
+        .search-bar{
+            border-radius: 10px;
+            height: 28px;
+            display: flex;
+            width: auto;
+            text-align: center;
+            overflow: hidden;
+            border: 1px solid #3b3c3c;
+            background: #0a0b0c;
+            margin-top: 6.5px;
+            transform: translateX(-22.5px);
+        }
+        @media (min-width: 1200px){
+            .search-bar{
+                width: 335px;
+            }
+        }
+        @media (max-width: 1066px){
+            .search-bar{
+                width: 275px;
+            }
+        }
+        @media (max-width: 992.5px){
+            .search-bar{
+                width: 377.5px;
+            }
+        }        
+        @media (max-width: 765px){
+            .search-bar{
+                width: 267.5px;
+            }
+        }
+        @media (max-width: 735px){
+            .search-bar{
+                width: 227.5px;
+            }
+        }
+        @media (max-width: 668px){
+            .search-bar{
+                width: 177.5px;
+            }
+        }
+        @media (max-width: 545px){
+            .search-bar{
+                display: none;
+            }
+        }
+        @media (min-width: 550px){
+            .search-hide-show{
+                display: none;
+            }
+        }
+        
+        .search-bar .search_login_roblox{
+            width: 100%;
+            position: relative;
+        }
+        .search-bar .icon_search{
+            width: 33px;
+            height: 28px;
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSA0LjEwOEE3LjgxMSA3LjgxMSAwIDAwOC42MyAxLjM2Yy0yLjkzNC4xNDctNS4zNDggMS44MzgtNi42NTcgNC4yMzhhLjc1Ljc1IDAgMTAxLjMxNy43MThjMS4wNzktMS45NzggMy4wNDMtMy4zNCA1LjQxNi0zLjQ1OGE2LjMxMiA2LjMxMiAwIDAxNS4wODEgMi4xNGgtMS42ODZhLjc1Ljc1IDAgMDAwIDEuNUgxNi41VjIuMWEuNzUuNzUgMCAwMC0xLjUgMHYyLjAwOHpNMS41IDExLjUwNmg0LjM5OWEuNzUuNzUgMCAwMTAgMS41aC0xLjY4YTYuMzEyIDYuMzEyIDAgMDA1LjA3NSAyLjEzM2MyLjM4NC0uMTIgNC40MDEtMS40ODggNS40MDgtMy40NDJhLjc1Ljc1IDAgMDExLjMzMy42ODdjLTEuMjQ5IDIuNDI0LTMuNzQyIDQuMTA3LTYuNjY2IDQuMjUzQTcuODEyIDcuODEyIDAgMDEzIDEzLjg4OXYyLjAxNmEuNzUuNzUgMCAwMS0xLjUgMHYtNC40ek0xMi41IDI1LjVhNSA1IDAgMTEtMTAgMCA1IDUgMCAwMTEwIDB6TTEgMjUuNWE2LjUgNi41IDAgMDAxMC40MzYgNS4xNzNsNC4wNzUgNC4wNzJhLjg3Mi44NzIgMCAwMDEuMjM0LS4wMDIuODc2Ljg3NiAwIDAwLS4wMDItMS4yMzdsLTQuMDcxLTQuMDY4QTYuNSA2LjUgMCAxMDEgMjUuNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-size: 40px auto;
+            opacity: .7;
+            background-position-y: -18.5px;
+            background-position-x: 5px;
+            cursor: pointer;
+        }
+        .search-bar input{
+            background: transparent;
+            border: none;
+            border-radius: none;
+        }
+        .search-bar .search_login_roblox, select::before{
+            padding-left: 5px;
+            font-size: 15px;
+            color: #fff;
+            outline: none;
+            &&::-webkit-search-cancel-button{
+                -webkit-appearance: none;
+                content: url(file:///c%3A/Users/ADMIN/Downloads/circle-xmark-regular%20%281%29.svg);
+                position: relative;
+                height: 20px;
+                width: 20px;
+                opacity: .7;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                padding-right: 5px;
+            }
+        }
+        .search-rblx{
+            margin-left: 25px;
+        }
+        .search-hide{
+            display: none;
+        }
+        .all_task {
+            display: flex;
+            text-align: center;
+            margin-right: 0;
+        }
+        .all_task a, a:active, a:focus, a:hover, a:link, a:visited{
+            text-decoration: none;
+            color: #fff;
+        }
+        .all_task a {
+            background: transparent;
+        }
+        .all_task li:hover, li:active, li:visited{
+            border-bottom: 2.5px solid #fff ;
+        }
+        .all_task li a{
+            justify-content: space-between;
+            color: #fff;
+            font-size: 16.25px;
+            font-weight: 500;
+            font-family: 'Poppins' ,sans-serif;
+        }
+        .all_task > li > a{
+            user-select: none;
+            display: inline-block;
+            padding: 9px 6px;
+        }
+        .all_task > li {
+            list-style: none;
+        }
+        .discover > .discover2 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .discover, .catalog, .create, .robux{
+            position: relative;
+            height: 34.391px;
+        }
+        .discover{
+            width: 24.32938771310599%;
+        }
+        .catalog{
+            width: 32.16709388518335%;
+        }
+        .create{
+            width: 22.5322605898747%;
+        }
+        .robux{
+            width: 21.22112919893173%;
+        }
+        .signup-rblx{
+            width: 99px;
+            height: 42px;
+            margin-right: 2px;
+            float: right;
+            position: relative;
+        }
+        .sign-up{
+            width: 99px;
+            height: 34px;
+            margin: 4px 0;
+            padding-top: 12.5px;
+        }
+        .signup-register{
+            width: 98.484px;
+            height: 30px;
+            padding: 2px;
+            padding-right: 3.75px;
+        }
+
+        ul >li >.a-signup{
+            height: 16px;
+            padding: 6px 9px;
+            border: 1px solid #00b06f;
+            background-color: #00b06f;
+            border-radius: 10px;
+        }
+        /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+        .sign-up li {
+            list-style: none;
+            font-size: 17.75px;
+            text-align: center;
+            font-weight: 600;
+            /* font-family: sans-serif; */
+            font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            line-height: 4px;
+        }
+        @font-face {
+            font-family: "HCo Gotham SSm";
+            src: url(/font/gotham-ssm-black.otf);
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url(/font/HelveticaNeue-BoldExt.otf);
+        }
+        @font-face {
+            font-family: "Lucida Grande";
+            src: url(/font/Lucida\ Grande\ Bold.ttf)
+        }
+
+        .task3{
+            display: flex;
+        }
+        .task4{
+            position: absolute;
+            display: flex ;
+            right: 0%;
+        }
+        .discover2, .marketplace, .create2, .robux2{
+            transform: translateY(-7.5px);
+        }
+        .discover, .catalog, .create, .robux{
+            padding-top: 2px;
+            transform: translateY(8.25px);
+        }
+        
+    </style>
+
+        <div class="menu1_span">
+    <div class="task1">
+            <span class="roblox_icon">
+            <a href="" class="icon-roblox">
+                <div class="icon-rblx"></div>
+            </a>
+        </span>
+    </div>
+    <div class="task2-on">   
+        <ul class="task-menu-2">
+            <ul class="all_task-2">
+                <li class="discover-2"><a class="discover2-2" href="#">
+                    Discover
+                </a></li>
+                <li class="catalog-2"><a class="marketplace-2" href="#">
+                    Marketplace
+                </a></li>
+                <li class="create-2"><a class="create2-2" href="#">
+                    Create
+                </a></li>
+                <li class="robux-2"><a class="robux2-2" href="#">
+                    Robux
+                </a></li>
+            </ul>
+        </ul>
+</div>
+    <style>
+        @media (max-width: 767px){
+            .all_task li a{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .all_task-2 {
+            display: flex;
+            text-align: center;
+        }
+        .all_task-2 a, a:active, a:focus, a:hover, a:link, a:visited{
+            text-decoration: none;
+            color: #fff;
+        }
+        .all_task-2 a {
+            background: transparent;
+        }
+        .all_task-2 li:hover, li:active, li:visited{
+            border-bottom: 3.75px solid #fff ;
+        }
+        .all_task-2 li a{
+            justify-content: space-between;
+            color: #fff;
+            /* font-size: 16.25px;
+            font-weight: 500; */
+            font-family: 'Poppins' ,sans-serif;
+        }
+        .all_task-2 > li > a{
+            user-select: none;
+            display: inline-block;
+            padding: 9px 6px;
+        }
+        .all_task-2 > li {
+            list-style: none;
+        }
+        .task-menu-2{
+            width: 447.078px;
+            /* height: auto; */
+            margin-left: 5px;
+            display: block;
+        }
+        .discover-2, .catalog-2, .create-2, .robux-2{
+            position: relative;
+            height: 34.391px;
+        }
+        @media (max-width: 1000px){
+        .task2{
+            width: 100%;
+            top: 40px;
+            left: 0;
+            position: absolute;
+            }
+        .task2-on{
+            display: none;
+        }
+    }
+        @media (min-width: 1001px){
+            .task2{
+                display: none;
+            }
+        }
+        
+        .discover-2{
+            width: 24.32938771310599%;
+        }
+        .catalog-2{
+            width: 32.16709388518335%;
+        }
+        .create-2{
+            width: 22.5322605898747%;
+        }
+        .robux-2{
+            width: 21.22112919893173%;
+        }
+
+        .signup-rblx{
+            width: 99px;
+            height: 42px;
+            margin-right: 2px;
+            float: right;
+            position: relative;
+        }
+
+        ul >li >.a-signup{
+            height: 16px;
+            padding: 4px 9px;
+            border: 1px solid #00b06f;
+            background-color: #00b06f;
+            border-radius: 7.5px;
+        }
+        .discover2-2, .marketplace-2, .create2-2, .robux2-2{
+            transform: translateY(-7.5px);
+        }
+        .discover-2, .catalog-2, .create-2, .robux-2{
+            padding-top: 1px;
+            transform: translateY(5.5px);
+        }
+    </style>
+<div class="task2">   
+    <ul class="task-menu">
+        <ul class="all_task">
+            <li class="discover"><a class="discover2" href="#">
+                Discover
+            </a></li>
+            <li class="catalog"><a class="marketplace" href="#">
+                Marketplace
+            </a></li>
+            <li class="create"><a class="create2" href="#">
+                Create
+            </a></li>
+            <li class="robux"><a class="robux2" href="#">
+                Robux
+            </a></li>
+        </ul>
+    </ul>
+</div>
+
+<div class="task3">
+        <div class="search-rblx">
+            <div class="search-bar">
+            <input class="icon_search" type="submit" value="">
+            <input type="search" name="search" maxlength="120" class="search_login_roblox" placeholder="Search">
+        </div>
+    </div>
+
+<div class="task4">
+        <div class="signup-rblx">
+            <ul class="sign-up">
+                <li class="signup-register">
+                    <a class="a-signup" href="#">
+                        Sign up
+                    </a>
+            </li>
+            </ul>
+        </div>
+        <div class="search-hide">
+            <button class="search-btn">
+            <div class="search-icon-hide"></div>
+        </button>
+        </div>
+    </div>
+    <style>
+        .search-hide{
+            display: inline-block;
+            position: relative;
+            width: 36px;
+            height: 36px;
+            padding: 2px;
+            margin-top: 3.5px;
+            margin-right: 5px;
+            border-radius: 8px;
+            margin-left: 24.25px;
+        }
+        .search-hide{
+            display: none;
+        }
+        @media (max-width: 545px){
+            .search-hide {
+                display: inline-block;
+            }
+            .search-hide-show{
+                display: none;
+            }
+        }
+        @media (min-width: 545px){
+            .search-hide{
+                display: none;
+            }
+        }
+        .search-hide:active{
+            border-bottom: none;
+        }
+        .search-btn{
+            width: 28px;
+            height: 28px;
+            padding: 4px;
+            background: transparent;
+            border: none;
+            overflow: visible;
+            font: inherit;
+        }
+        .active-color1{
+            background: #787d7d;
+        }
+        .search-icon-hide{
+            width: 28px;
+            height: 28px;
+            background: url(https://images.rbxcdn.com/53374db5b6c1b349a20d0471ea032868-navigation_dark.svg);
+            background-size: 56px auto;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-position-y: -114px;
+        }
+        .search-icon-hide:hover{
+            filter: brightness(1.75);
+        }
+    </style>
+    <script>
+        const search_hide_btn = document.querySelector('.search-btn');
+        const background_search_hide = document.querySelector('.search-hide');
+        let check_active_btn = false;
+        search_hide_btn.onclick = () =>{
+        if(check_active_btn == false){
+            background_search_hide.classList.add('active-color1');
+            return check_active_btn = true;
+            }
+        if(check_active_btn == true){
+                background_search_hide.classList.remove('active-color1');
+                return check_active_btn = false;
+            }
+        }
+        
+    </script>
+    <div class="search-hide-show">
+        <div class="search-rblx2">
+            <div class="search-bar2">
+            <input class="icon_search2" type="submit" value="">
+            <input type="search" name="search" maxlength="120" class="search_login_roblox2" placeholder="Search">
+        </div>
+    </div>
+    </div>
+
+    <style>
+        .search-hide-show{
+            position: absolute;
+            top: 37.5px;
+            left: 0;
+            margin-left: 41.25px;
+            width: 95%;
+            z-index: 10;
+        }
+        .search-bar2{
+            border-radius: 10px;
+            height: 30px;
+            display: flex;
+            width: auto;
+            text-align: center;
+            overflow: hidden;
+            border: 1px solid #3b3c3c;
+            background: #0a0b0c;
+            margin-top: 6.5px;
+            transform: translateX(-22.5px);
+        }
+        .search-bar2 .search_login_roblox2{
+            width: 100%;
+            position: relative;
+        }
+        .search-bar2 .icon_search2{
+            width: 33px;
+            height: 28px;
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNSA0LjEwOEE3LjgxMSA3LjgxMSAwIDAwOC42MyAxLjM2Yy0yLjkzNC4xNDctNS4zNDggMS44MzgtNi42NTcgNC4yMzhhLjc1Ljc1IDAgMTAxLjMxNy43MThjMS4wNzktMS45NzggMy4wNDMtMy4zNCA1LjQxNi0zLjQ1OGE2LjMxMiA2LjMxMiAwIDAxNS4wODEgMi4xNGgtMS42ODZhLjc1Ljc1IDAgMDAwIDEuNUgxNi41VjIuMWEuNzUuNzUgMCAwMC0xLjUgMHYyLjAwOHpNMS41IDExLjUwNmg0LjM5OWEuNzUuNzUgMCAwMTAgMS41aC0xLjY4YTYuMzEyIDYuMzEyIDAgMDA1LjA3NSAyLjEzM2MyLjM4NC0uMTIgNC40MDEtMS40ODggNS40MDgtMy40NDJhLjc1Ljc1IDAgMDExLjMzMy42ODdjLTEuMjQ5IDIuNDI0LTMuNzQyIDQuMTA3LTYuNjY2IDQuMjUzQTcuODEyIDcuODEyIDAgMDEzIDEzLjg4OXYyLjAxNmEuNzUuNzUgMCAwMS0xLjUgMHYtNC40ek0xMi41IDI1LjVhNSA1IDAgMTEtMTAgMCA1IDUgMCAwMTEwIDB6TTEgMjUuNWE2LjUgNi41IDAgMDAxMC40MzYgNS4xNzNsNC4wNzUgNC4wNzJhLjg3Mi44NzIgMCAwMDEuMjM0LS4wMDIuODc2Ljg3NiAwIDAwLS4wMDItMS4yMzdsLTQuMDcxLTQuMDY4QTYuNSA2LjUgMCAxMDEgMjUuNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-size: 40px auto;
+            opacity: .7;
+            background-position-y: -18.5px;
+            background-position-x: 5px;
+            cursor: pointer;
+        }
+        .search-bar2 input{
+            background: transparent;
+            border: none;
+            border-radius: none;
+        }
+        .search-bar2 .search_login_roblox2, select::before{
+            padding-left: 5px;
+            font-size: 15px;
+            color: #fff;
+            outline: none;
+            &&::-webkit-search-cancel-button{
+                -webkit-appearance: none;
+                content: url(file:///c%3A/Users/ADMIN/Downloads/circle-xmark-regular%20%281%29.svg);
+                position: relative;
+                height: 20px;
+                width: 20px;
+                opacity: .7;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                padding-right: 5px;
+            }
+        }
+    </style>
+    <script>
+        const search_hide_show = document.querySelector('.search-hide-show');
+        let showSearchBar = false;
+        const search_on_btn = document.querySelector('.search-hide');
+        const search_on_btn2 = document.querySelector('search-btn');
+        search_on_btn.onclick = ()=>{
+            if(showSearchBar == false){
+                search_hide_show.style.display = "none"
+                return showSearchBar = true;
+            }
+            if(showSearchBar == true){
+                search_hide_show.style.display = "block";
+                return showSearchBar = false;
+            }
+        }
+    </script>
+</div>
+        </header>
+
+        <style>            
+        .content-login{
+                position: relative;
+                /* height: 674px; */
+                height: 600px;
+                padding-top: 12px;
+                background-color: rgb(35, 37, 39);
+                width: 100%;
+                border-top: 1px solid ;
+                line-height: 22.4px;
+                vertical-align: middle;
+                letter-spacing: normal;
+                word-spacing: 0px ;
+                display: flex;
+            }
+        @media (max-width: 767px){
+            .login-rblx2 h1 {
+                font-size: 24px;
+            }
+        }
+        @media (min-width: 767px){
+            .login-rblx2 h1 {
+                font-size: 32px;
+            }
+        }
+        
+            body{
+                overflow-x: hidden;
+                overflow-y: auto;
+            }    
+            .login-rblx3 h1{
+                            font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            /* font-size: 32px; */
+            font-weight: 800;
+            color: #fff;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0);
+            line-height: 43.6px;
+            vertical-align: baseline;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            text-align: center;
+            box-sizing: inherit;
+            padding: 5px 0;
+            margin-left: 25px;
+            }
+            .login-rblx1{
+                margin-top: 12.5px;
+                position: absolute;                
+                width: 400px;
+                height: 98.0392156863%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                overflow: hidden;
+            }
+            .login-rblx2{
+                top: 60px;
+                height: 82.3985%;
+                position: relative;
+                background-color: rgb(57, 59, 61);
+                margin-bottom: 12px;
+                width: 100%;
+                text-align: center;
+            }
+            @media (max-width: 767px){
+                .login-rblx3{
+                    margin: 0 0 12px;
+                }
+            }
+            .login-rblx3{
+                text-rendering: auto;
+                width: 370px;
+                height: 421.375px;
+                padding: 15px;
+                margin-bottom: 12px;
+                background-color: #393b3d;
+                box-sizing: inherit;
+            }
+            .login-rblx2 input, button {
+                display: flex;
+            }
+            .input-button-login input{
+                width: 370px;
+                height: 38px;
+                border-radius: 8px;
+                line-height: 1.4em;
+                background-color: rgba(0,0,0,.7);
+                border-color: hsla(0,0%,100%,.2);
+                color: #bdbebe;
+                font-size: 16px;
+                line-height: 22.4px;
+                vertical-align: baseline;
+                word-spacing: 0px;
+                                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            }
+            .input-button-login input, select::placeholder{
+                padding-left: 12.5px;
+                font-family: 'Poppins', sans-serif;
+                line-height: 22.4px;
+                letter-spacing: normal;
+                vertical-align: baseline;
+                word-spacing: 0px;
+                font-weight: 300;
+                outline: none;
+            }
+            .input-button-login input:first-child{
+                margin-top: 2.5px;
+                margin-bottom: 18px;
+            }
+            .submit-login {
+                width: 100%;
+                height: 38px;
+                margin-top: 6px ;
+                margin-bottom: 12px;
+                padding: 9px;
+                line-height: 16px;
+                border: 1px solid;
+                border-color: #bdbebe;
+                border-radius: 8px;
+                background: transparent;
+                color: #bdbebe;
+                cursor: pointer;
+                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+            }
+            .submit-login:hover{
+                border-color: #fff;
+                color: #fff;
+            }
+            .submit-login span{
+                padding-top: 1px;
+            }
+            .login-form{
+                width: 370px;
+                height: 148px;
+            }
+            .input-button-login{
+                width: 370px;
+                height: 144px;
+                margin-bottom: 18px;
+            }
+            .link-forgot_password_username a{
+                                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-size: 17px;
+                line-height: 22.4px;
+                vertical-align: baseline;
+                letter-spacing: normal;
+                word-spacing: 0px;
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+            }
+            .link-forgot_password_username{
+                width: 370px;
+                height: 22.391px;
+                margin-top: 12px;
+            }
+            .link-forgot_password_username a:hover{
+                text-decoration: underline solid rgb(255, 255, 255);
+                font-weight: 700;
+                font-style: normal;
+                font-variant: normal;
+                text-transform: none;
+                text-align: center;
+                text-indent: 0px;
+            }
+            .content-login-part3{
+                width: 370px;
+                height: 105.906px;
+            }
+            .prevent-top{
+                position: relative;
+                width: 370px;
+                height: 1px;
+                margin-bottom: 6px;
+                display: block;
+                                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-size: 16px;
+                line-height: 22.4px;
+                font-weight: 400;
+                background: #616264;
+            }
+            .margintop{
+                margin-top: 24px;
+            }
+            .btn-control1{
+                width: 100%;
+                height: 32.91px;
+                padding: 7px;
+                border: 1px solid;
+                border-color: #b8b8b8;
+                margin-top: 12px;
+                margin-bottom: 6px;
+                background: transparent;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 8px;
+                padding-inline: 6px;
+                display: inline-block;
+                text-indent: 0px;
+                padding-block: 1px;
+                color: #b8b8b8;
+                                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight: 600;
+                line-height: 16px;
+                font-size: 18px;
+            }
+            .btn-control1 p {
+                padding-top: 2.5px;
+            }
+            .btn-control2 {
+                width: 100%;
+                height: 32.91px;
+                padding: 7px;
+                border: 1px solid;
+                border-color: #b8b8b8;
+                margin-top: 6px;
+                margin-bottom: 10px;
+                background: transparent;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 8px;
+                padding-inline: 6px;
+                display: inline-block;
+                text-indent: 0px;
+                padding-block: 1px;
+                color: #b8b8b8;
+                                font-family: "HCo Gotham SSm", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight: 600;
+                line-height: 16px;
+                font-size: 18px;
+            }
+            .btn-control1 p {
+                padding-top: 2.5px;
+            }
+            .register-account-text, .text-register-link{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                line-height: 22.4px;
+                display: inline-block;
+                text-rendering: auto;
+                box-sizing: inherit;
+            }
+            .register-account-text {
+                color: #ffffe0;
+                font-weight: 500;
+            }
+            .link-register:hover{
+                text-decoration: underline 1px solid #fff;
+            }
+            .text-register-link{
+                color: #fff;
+                padding-left: 5px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .content-login-p4{
+                width: 370px;
+                height: 22.391px;
+            }
+            .signup2-login-form{
+                width: 370px;
+                height: 22.391px;
+                margin: 24px 0;
+            }
+            .error-login{
+                width: 100%;
+                height: 12px;
+            }
+            .error-login .error-alert{
+                height: auto;
+                word-wrap: break-word;
+                hyphens: none;
+            }
+            .error-alert{
+                width: 100%;
+                height: 12px;                
+                display: inline-block;
+            }
+            .error-login p {
+                color: #f74b52;
+                font-weight: 400;
+                /* font-size: 8px; */
+                font-family: 'Montserrat',Arial , Helvetica, sans-serif;
+                display: flex;
+                justify-content: start;
+                width: auto;
+                height: auto;
+                vertical-align: baseline;
+                line-height: 12px;
+            }
+            @media (max-width: 767px){
+                .error-alert-text{
+                    font-size: 8px;
+                }
+            }
+            @media (min-width: 767px){
+                .error-alert-text{
+                    font-size: 10px;
+                }
+            }
+            .load_login{
+                width: 100%;
+                height: 24px;
+                background: url(https://images.rbxcdn.com/fab3a9d08d254fef4aea4408d4db1dfe-loading_dark.gif);
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: 50%;
+                margin: 6px auto;
+                display: inline-block;
+                background-size: auto 24px;
+                display: none;
+            }
+        </style>    
+<div class="content-login">
+    <div class="login-rblx1">
+        <div class="login-rblx2">
+            <div class="login-rblx3">
+            <h1 class="login-title-h1">Login to Roblox</h1>
+            <div class="login-form">
+                <div class="input-button-login">
+                    <input type="text" class="username-email-phone" placeholder="Username/Email address/Phone number">
+                    <input type="password" class="password-login" placeholder="Password">
+                    <div class="error-login">
+                        <p class="error-alert">
+                            <p style="vertical-align: inherit;">
+                                <p style="vertical-align: inherit;" class="error-alert-text">
+                                    
+                                </p>
+                            </p>
+                        </p>
+                    </div>
+                    <button type="submit" class="submit-login"><span>Log in</span></button>
+                    <span class="load_login"></span>
+                </div>
+            </div>
+            <div class="link-forgot_password_username">
+                <a href="#">Forgot Password or Username?</a>
+            </div>
+            
+            <div class="content-login-part3">
+                <div class="prevent-top">
+                    <div class="margintop"></div>
+                </div>
+                <button type="button" class="btn-control1">
+                    <p style="vertical-align: inherit;">
+                        <p style="vertical-align: inherit;">
+                        Send me a one-time code via email
+                        </p>
+                    </p>
+                </button>
+                <button type="button" class="btn-control2">
+                    <span>
+                        <p style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;">
+                                Use another device
+                            </p>
+                        </p>
+                    </span>
+                </button>
+            </div>
+        
+            <div class="content-login-p4">
+                <div class="signup2-login-form">
+                    <span class="register-account-text">
+                        <p style="vertical-align: inherit;">
+                            <p style="vertical-align: inherit;">
+                                Don't have an account?
+                            </p>
+                        </p>
+                    </span>
+                    <a class="text-register-link" href="#">
+                        <label style="vertical-align: inherit;">
+                            <label style="vertical-align: inherit;" class="link-register">
+                                Sign up
+                            </label>
+                        </label>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var input_username = document.querySelector('.username-email-phone');
+        var input_password = document.querySelector('.password-login');
+        const btn_check = document.querySelector('.submit-login');
+        const error_alert = document.querySelector('.error-alert-text');
+        const load_login = document.querySelector('.load_login');
+        const trueOfalse_reload = false;
+
+        btn_check.onclick = () =>{   
+        if(input_username.value == "" && input_password.value == "" || input_username.value == null || input_password.value == null){
+            error_alert.textContent = 'Username and password required';
+        }
+        if(input_username.value == ""){
+            error_alert.textContent = 'Username and password required';
+        }
+        if(input_password.value == ""){
+            error_alert.textContent = 'Username and password required';
+        }
+        if(input_username.value.length >=3 && input_password.value.length >=8 && input_username.value.length <=20 && input_password.value.length <=200){
+            // alert('success');
+            load_login.style.display = 'inline-block';
+            btn_check.style.display = 'none';
+            error_alert.textContent = '';
+            setTimeout(function () {
+                location.reload(1);
+                return trueOfalse_reload = true;
+            }, 3000)
+        }
+        if(input_username.value.length <1 && input_password.value.length <8 && input_username.value.length >20 && input_password.value.length >200){
+            error_alert.textContent = 'Username and password required';
+        }
+    }
+
+        
+    </script>
+</div> 
+</div>
+
+    <style>
+        @media (max-width: 1000px){
+            .footer-end-page{
+                top: 50px;
+            }
+        }
+        body{
+            background-color: #232527;
+        }
+        .footer-end-page{
+            position: relative;
+            width: 100%;
+            padding: 12px;
+            height: 151.39px;
+            background-color: rgb(35, 37, 39);
+            /* border-top: 1px solid #fff; */
+            padding: 12px;
+            margin-top: 110px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .footer {
+            width: 100%;
+            height: 107.391px;
+            font-family: inherit;
+        }
+        @media (max-width: 990px){
+            .footer-end-page{
+                height: 173.781px;
+            }
+            .footer{
+               height: 153.781px; 
+            }
+        }
+        @media (max-width: 910px){
+            .footer{
+                height: 168.781px;
+            }
+            .footer-end-page{
+                height: 188.781px;
+            }
+        }
+        @media (max-width: 537.5px){
+            .footer-end-page{
+                height: 171.594px;
+            }
+            .footer{
+                height: 151.594px;
+            }
+        }
+    .row-footer-link{
+        display: flex;
+        text-align: center;
+        margin-bottom: 32px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-right: 0;
+        vertical-align: baseline;
+        margin: 20px 177.5px 0 177.5px;
+        border-bottom: 1px solid #7f7f7f;
+        padding-bottom: 32px;
+    }
+    .row-footer-link li, ul{
+        list-style: none;
+        text-rendering: auto;
+        &&ul {
+            display: inline-block;
+            margin-block-start: 1em;
+            margin-inline-start: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            letter-spacing: normal;
+        }
+    }
+    @media (max-width: 991px){
+        .footer .footer-link{
+            min-width: 15%;
+        }
+    }
+    @media (max-width: 990px){
+        .row-footer-link{
+            margin: 0px;
+            margin-top: 20px;
+        }
+        .row-copyright-container{
+            font-size: 8px;
+            font-weight: 400;
+        }
+    }
+    @media (max-width: 990px){
+        .footer .footer-link a{
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    @media (min-width: 995px){
+        .footer .footer-link a{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.4em;
+        }
+    }
+    .footer .footer-link{
+        margin: 6px;
+        vertical-align:baseline;
+        letter-spacing: normal;
+    }
+    .footer .footer-link a {
+            font-family: inherit;
+            /* font-size: 16px; */
+            font-weight: 500;
+            white-space: nowrap;
+            display: list-item;
+            letter-spacing: normal;
+            color: #bdbebe;
+    }
+    .footer .footer-link li {
+        margin: 3px;
+    }
+    .footer-link a:hover {
+        color: #fff;
+    }
+    .footer-link a:active, a:visited {
+        border-bottom: none;
+        text-decoration: none;
+    }
+    .row-copyright-container{
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        box-sizing: inherit;
+        text-rendering: auto;
+        display: block;
+        height: 37px;
+        margin-top: 24px;
+        color: #bdbebe;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        hyphens: none;
+        box-sizing: inherit;
+        text-rendering: auto;
+    }
+
+    </style>
+    <footer class="footer-end-page">
+        <div class="footer">
+            <ul class="row-footer-link">
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">About us</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Job</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Blog</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Parents</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Gift card</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Help</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Rules</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Accessible</a>
+                 </li>
+                <li class="footer-link">
+                    <a class="text-footer-nav" href="#">Private</a>
+                 </li>
+            </ul>
+            <div class="row-copyright-container">
+                <div class="col-sm-12">
+                    <p class="text-footer">
+                        <span style="vertical-align: inherit;">
+                            <span style="vertical-align: inherit;">@2023 Roblox Corporation</span>
+                            <span style="vertical-align: inherit;">Roblox, the Roblox logo, and Powering Imagination are our registered and unregistered trademarks in the United States and other countries.</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+
+    </style>
+    <div class="error-roblox">
+
+    </div>
+    <script>
+        console.log
+(`
+      _______      _________      _____       ______     _
+     / _____ \    |____ ____|    / ___ \     | ____ \   | |
+    / /     \_\       | |       / /   \ \    | |   \ \  | |
+    | |               | |      / /     \ \   | |   | |  | |
+    \ \______         | |      | |     | |   | |___/ /  | |
+     \______ \        | |      | |     | |   |  ____/   | |
+            \ \       | |      | |     | |   | |        | |
+     _      | |       | |      \ \     / /   | |        |_|
+    \ \_____/ /       | |       \ \___/ /    | |         _
+     \_______/        |_|        \_____/     |_|        |_|
+
+     Keep your account safe! Do not send any information from
+     here to anyone or paste any text here.
+
+     If someone is asking you to copy or paste text here then
+     you're giving someone access to your account, your gear,
+     and your Robux.
+
+     To learn more about keeping your account safe you can go to
+
+     https://www.roblox.com/info/account-safety
+`)
+    </script>
+    </body>
+</html>
